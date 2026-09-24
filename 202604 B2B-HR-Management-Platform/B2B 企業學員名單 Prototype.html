@@ -85,7 +85,7 @@
                         <span class="text-[10px] text-slate-400 mt-1 block">昨天</span>
                     </a>
                     <a href="#" class="block p-3 hover:bg-slate-50 transition opacity-60">
-                        <h4 class="text-xs font-bold text-slate-800 mb-0.5">遠見線上讀：系統維護公告</h4>
+                        <h4 class="text-xs font-bold text-slate-800 mb-0.5">OOOO線上讀：系統維護公告</h4>
                         <p class="text-[11px] text-slate-500 line-clamp-2">系統將於本週日凌晨 02:00-04:00 進行升級，期間將暫停服務。</p>
                         <span class="text-[10px] text-slate-400 mt-1 block">3 天前</span>
                     </a>
@@ -641,7 +641,7 @@ function batchAction(type) {
     const names = MEMBERS.filter(m => selectedIds.has(m.id)).map(m => m.name).join('、');
     if (type === 'resend') {
         showToast(`已重新發送開通信給：${names}`);
-        window.open('【重要通知】遠見已為您開通線上讀權限.pdf', '_blank');
+        window.open('【重要通知】OOOO已為您開通線上讀權限.pdf', '_blank');
         clearSelection();
         return;
     }
@@ -656,7 +656,7 @@ function batchAction(type) {
 function resendEmail(id) {
     const m = MEMBERS.find(m => m.id === id);
     showToast(`已重新發送開通信給 ${m.name}`);
-    window.open('【重要通知】遠見已為您開通線上讀權限.pdf', '_blank');
+    window.open('【重要通知】OOOO已為您開通線上讀權限.pdf', '_blank');
 }
 
 function restoreMember(id) {
@@ -779,7 +779,7 @@ function submitAdd(e) {
         } else {
             MEMBERS.push({ id, name, email, dept, title, status:'pending', activatedAt:null, lastLogin:null, reads:0 });
             showToast(`${name} 已新增，開通信已發送`);
-            window.open('【重要通知】遠見已為您開通線上讀權限.pdf', '_blank');
+            window.open('【重要通知】OOOO已為您開通線上讀權限.pdf', '_blank');
         }
     }
 
@@ -849,7 +849,7 @@ function submitImport() {
     document.getElementById('csv-preview').classList.add('hidden');
     document.getElementById('csv-file').value = '';
     showToast('批次匯入完成，開通信已自動發送（模擬）');
-    window.open('【重要通知】遠見已為您開通線上讀權限.pdf', '_blank');
+    window.open('【重要通知】OOOO已為您開通線上讀權限.pdf', '_blank');
 }
 
 function exportCSV() {

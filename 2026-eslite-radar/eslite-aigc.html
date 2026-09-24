@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- ============================================================
   eslite-aigc.html — 誠品外殼頁（Layer 1，AIGC 深度解析）
-  用途：誠品網站中的 iframe 外殼，內嵌遠見 GTM 中介頁 gvm-aigc.html。
+  用途：誠品網站中的 iframe 外殼，內嵌OOOO GTM 中介頁 gvm-aigc.html。
         本頁無法控制（由誠品工程師維護），僅負責版型與高度監聽。
 
   3-Layer 架構：
     [Layer 1] eslite-aigc.html（本頁，誠品）
-      └─ iframe → [Layer 2] gvm-aigc.html（遠見，含 GTM-5ZH7TSVB）
+      └─ iframe → [Layer 2] gvm-aigc.html（OOOO，含 GTM-5ZH7TSVB）
                     └─ iframe → [Layer 3] aigc-article.html（摩速，postMessage 傳事件）
 
   GTM：無（GA4 追蹤由 Layer 2 gvm-aigc.html 負責）
@@ -134,7 +134,7 @@ body {
   <P> ↓ ↓ 內嵌  GVM GTM中介頁  https://event.gvm.com.tw/ddc_test/0Jessie/2026-eslite-radar/gvm-aigc.html" </p>
 </div>
 
-<!-- ─── IFRAME 內嵌區塊：gvm-aigc.html（遠見 GTM 中介頁，Layer 2）─── -->
+<!-- ─── IFRAME 內嵌區塊：gvm-aigc.html（OOOO GTM 中介頁，Layer 2）─── -->
 <!-- src 不含 ?partner=，由下方 JS 動態帶入，確保 partner_site 永遠有值 -->
 <iframe
   id="contentFrame"

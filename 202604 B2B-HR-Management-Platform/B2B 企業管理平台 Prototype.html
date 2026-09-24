@@ -4,7 +4,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遠見線上讀 B2B 企業管理平台 Prototype</title>
+    <title>OOOO線上讀 B2B 企業管理平台 Prototype</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -94,7 +94,7 @@
                             <span class="text-[10px] text-slate-400 mt-1 block">昨天</span>
                         </a>
                         <a href="javascript:void(0)" onclick="openPushDetail('maintenance'); closeBell()" class="block p-3 hover:bg-slate-50 transition opacity-60">
-                            <h4 class="text-xs font-bold text-slate-800 mb-0.5">遠見線上讀：系統維護公告</h4>
+                            <h4 class="text-xs font-bold text-slate-800 mb-0.5">OOOO線上讀：系統維護公告</h4>
                             <p class="text-[11px] text-slate-500 line-clamp-2">系統將於本週日凌晨 02:00-04:00 進行升級，期間將暫停服務。</p>
                             <span class="text-[10px] text-slate-400 mt-1 block">3 天前</span>
                         </a>
@@ -753,11 +753,11 @@
             const msg = type === 'seats' ? '名額擴充洽詢' : '合約續約洽詢';
             const showSuccess = () => {
                 document.getElementById('upsell-modal-title').textContent = `${msg}需求已提交`;
-                document.getElementById('upsell-modal-body').textContent = `遠見業務部已收到您的${msg}意願。您的專屬服務窗口將於 24 小時內與您聯繫。`;
+                document.getElementById('upsell-modal-body').textContent = `OOOO業務部已收到您的${msg}意願。您的專屬服務窗口將於 24 小時內與您聯繫。`;
                 document.getElementById('upsell-modal').classList.remove('hidden');
             };
             
-            showToast(`正在發送${msg}需求給遠見業務部...`);
+            showToast(`正在發送${msg}需求給OOOO業務部...`);
             setTimeout(showSuccess, 1500);
         }
         function closeUpsellModal() {
@@ -779,7 +779,7 @@
             <div class="p-8 text-center">
                 <h3 id="upsell-modal-title" class="text-xl font-bold text-slate-800 mb-3">需求已提交</h3>
                 <p id="upsell-modal-body" class="text-sm text-slate-500 leading-relaxed mb-8">
-                    遠見業務部已收到您的意願。您的專屬服務窗口將於 24 小時內與您聯繫。
+                    OOOO業務部已收到您的意願。您的專屬服務窗口將於 24 小時內與您聯繫。
                 </p>
                 <button onclick="closeUpsellModal()" class="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold rounded-xl transition-colors">
                     返回儀表板
@@ -832,7 +832,7 @@
             'earlyBird': {
                 title: '🔥 2026 早鳥續約專屬方案',
                 content: `
-                    <p>感謝貴集團長期以來對《遠見線上讀》的支持。為回饋核心合作客戶，我們推出 <b>2026 年度早鳥續約計畫</b>：</p>
+                    <p>感謝貴集團長期以來對《OOOO線上讀》的支持。為回饋核心合作客戶，我們推出 <b>2026 年度早鳥續約計畫</b>：</p>
                     <ul class="list-disc pl-5 mt-3 space-y-2">
                         <li><b>名額升級：</b>月底前確認續約，現有名額免費升級 20%（例如 100 席升級為 120 席）。</li>
                         <li><b>贈送電子書：</b>加贈年度暢銷電子書一本（任選）。</li>
@@ -850,9 +850,9 @@
                     <div class="bg-indigo-50 p-4 rounded-lg my-4 border-l-4 border-indigo-500 text-indigo-900 text-xs">
                         <b>主題：</b>AI 與組織人才培育實務<br>
                         <b>日期：</b>2026 / 05 / 20 (二)<br>
-                        <b>地點：</b>遠見天下文化書院 (台北市南京東路二段)
+                        <b>地點：</b>OOOO文化書院 (台北市南京東路二段)
                     </div>
-                    <p>現場將由《遠見》資深編輯與技術專家共同交流，名額有限，請盡速報名。</p>
+                    <p>現場將由《OOOO》資深編輯與技術專家共同交流，名額有限，請盡速報名。</p>
                 `,
                 cta: '立即線上報名',
                 url: '#'
@@ -876,7 +876,7 @@
             const ctaBtn    = document.getElementById('push-detail-cta');
             const ctaCont   = document.getElementById('push-cta-container');
 
-            titleEl.innerText = data.title || '來自遠見的最新推播';
+            titleEl.innerText = data.title || '來自OOOO的最新推播';
             // 若 content 為純文字則換行顯示，若含 HTML 則直接渲染
             contentEl.innerHTML = data.content
                 ? (/<[a-z][\s\S]*>/i.test(data.content)
@@ -944,7 +944,7 @@
         // ── PV Chart ───────────────────────────────────────────────
     </script>
     <!-- Floating Shortcut to SA -->
-    <a href="遠見內部後台%20Prototype.html" class="floating-shortcut" title="切換回 SA 內部後台">
+    <a href="OOOO內部後台%20Prototype.html" class="floating-shortcut" title="切換回 SA 內部後台">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
         <span>SA 後台</span>
     </a>

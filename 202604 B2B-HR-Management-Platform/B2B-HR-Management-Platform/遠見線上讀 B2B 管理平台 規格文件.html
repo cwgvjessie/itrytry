@@ -4,7 +4,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遠見線上讀 B2B 管理平台 - 功能規格書</title>
+    <title>OOOO線上讀 B2B 管理平台 - 功能規格書</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -66,7 +66,7 @@
                 <span class="tag">合約時效對齊 (Pro-Rata)</span>
                 <span class="tag">隱藏封存 (Soft Delete)</span>
             </div>
-            <h1>遠見線上讀 B2B 管理平台 <br><span class="text-2xl text-slate-500 font-normal mt-2 block">系統功能規格書 (PRD)</span></h1>
+            <h1>OOOO線上讀 B2B 管理平台 <br><span class="text-2xl text-slate-500 font-normal mt-2 block">系統功能規格書 (PRD)</span></h1>
             
             <div class="text-left highlight-box">
                 <strong class="text-red-700 block mb-1">📌 專案概述</strong>
@@ -81,7 +81,7 @@
                     <a href="B2B%20%E4%BC%81%E6%A5%AD%E5%AD%B8%E5%93%A1%E5%90%8D%E5%96%AE%20Prototype.html" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium no-underline hover:underline transition-all">👉 2. B2B 企業學員名單 (人員管理)</a>
                     <a href="Email%20Templates.html" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium no-underline hover:underline transition-all">👉 3. Email 通知信模板 (Email Templates)</a>
                     <a href="B2B%20%E4%BC%81%E6%A5%AD%E6%93%8D%E4%BD%9C%E7%B4%80%E9%8C%84%20Prototype.html" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium no-underline hover:underline transition-all">👉 4. B2B 企業操作紀錄 (Action Log)</a>
-                    <a href="%E9%81%A0%E8%A6%8B%E5%85%A7%E9%83%A8%E5%BE%8C%E5%8F%B0%20Prototype.html" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium no-underline hover:underline transition-all">👉 5. 遠見內部後台 (營運管理台)</a>
+                    <a href="%E9%81%A0%E8%A6%8B%E5%85%A7%E9%83%A8%E5%BE%8C%E5%8F%B0%20Prototype.html" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium no-underline hover:underline transition-all">👉 5. OOOO內部後台 (營運管理台)</a>
                 </div>
             </div>
         </header>
@@ -96,15 +96,15 @@
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-emerald-500">
                     <strong class="text-emerald-800 block mb-1">企業管理員 (主/協同)</strong>
-                    <p class="text-slate-600 text-sm m-0">企業端管理者，分為「主要管理者 (遠見指定，不可刪)」與「協同管理者 (平行共管)」。皆可管理學員。</p>
+                    <p class="text-slate-600 text-sm m-0">企業端管理者，分為「主要管理者 (OOOO指定，不可刪)」與「協同管理者 (平行共管)」。皆可管理學員。</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-amber-500">
                     <strong class="text-amber-800 block mb-1">學員</strong>
                     <p class="text-slate-600 text-sm m-0">獲得企業配發閱讀權益的員工（終端使用者）。</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-rose-500">
-                    <strong class="text-rose-800 block mb-1">遠見管理員</strong>
-                    <p class="text-slate-600 text-sm m-0">遠見內部後台管理員，擁有營運最高管理權限。</p>
+                    <strong class="text-rose-800 block mb-1">OOOO管理員</strong>
+                    <p class="text-slate-600 text-sm m-0">OOOO內部後台管理員，擁有營運最高管理權限。</p>
                 </div>
             </div>
         </section>
@@ -128,7 +128,7 @@
                     <li class="mb-2"><strong>堅持標準化 SaaS：</strong> 專注於「線上讀」產品，不接受深度客製化，確保能高速複製並達成上述業務指標。</li>
                     <li class="mb-2"><strong>合約期限對齊 (Pro-rata)：</strong> 若企業期中加購名額，系統主動將新增名額的到期日與「主合約」對齊，降低使用計算的混亂。</li>
                     <li><strong>護城河與生命週期閉環 (The Moat)：</strong> 合約到期後，HR Dashboard 將強制切換為<strong>「永久唯讀模式」</strong>。HR 仍可無限期登入查閱歷史學習數據，但無法新增或異動名單，且介面頂部將長駐「專屬續約廣告橫幅」，將原有的履約管理工具，轉化為無形的 B2B 持續再行銷通路。</li>
-                    <li class="mb-2"><strong>前台整合至既有平台：</strong> 遠見線上讀前台（學員閱讀介面）<strong>非獨立全新前端</strong>，整合至既有 gvm.com.tw 體系；學員入口位於遠見會員中心（<code>member.gvm.com.tw</code>），B2B 閱讀功能以模組形式嵌入會員中心，學員以現有遠見帳號登入即可存取。</li>
+                    <li class="mb-2"><strong>前台整合至既有平台：</strong> OOOO線上讀前台（學員閱讀介面）<strong>非獨立全新前端</strong>，整合至既有 gvm.com.tw 體系；學員入口位於OOOO會員中心（<code>member.gvm.com.tw</code>），B2B 閱讀功能以模組形式嵌入會員中心，學員以現有OOOO帳號登入即可存取。</li>
                 </ul>
             </div>
         </section>
@@ -144,13 +144,13 @@
                 <ul class="list-disc pl-5 m-0 space-y-1">
                     <li><strong>匯入方式：</strong>支援單筆新增與 CSV/Excel 批次上傳。</li>
                     <li><strong>名額控管 (Seat Quota)：</strong>採取「整批阻擋」防呆機制。若上傳名單大於剩餘名額，系統將整批拒絕匯入。「未開通」狀態之學員亦會佔用名額。</li>
-                    <li><strong>現有會員判定：</strong>若信箱已存在於遠見會員庫（含社群第三方登入），匯入後直接發配權益，狀態為「已開通」。</li>
+                    <li><strong>現有會員判定：</strong>若信箱已存在於OOOO會員庫（含社群第三方登入），匯入後直接發配權益，狀態為「已開通」。</li>
                     <li><strong>權益重疊處理：</strong>允許同帳號在兩個專案走期中重疊，時間採聯集（不累加），重疊期數據同時歸屬至兩個專案。系統匯入時僅做「軟提示」，不阻擋。</li>
                 </ul>
             </div>
             <div class="mermaid">
             graph TD
-                subgraph Admin ["遠見內部後台"]
+                subgraph Admin ["OOOO內部後台"]
                     A[後台維運管理] -->|1. 新增企業| B(建立企業資料)
                     A -->|2. 設定企業管理員| C(授權管理)
                 end
@@ -171,7 +171,7 @@
                     H --> I[學員點擊郵件專屬連結]
                     P --> I
                     Q --> I
-                    I --> J{已有遠見帳號?}
+                    I --> J{已有OOOO帳號?}
                     J -->|否| K[引導註冊新帳號]
                     J -->|是| L[登入既有帳號]
                     K --> M[綁定為企業用戶，開啟無限暢讀]
@@ -205,9 +205,9 @@
             <h3 class="mt-12">3. 合約變更與資料到期邏輯 (Lifecycle)</h3>
             <div class="mermaid">
             sequenceDiagram
-                participant S as 遠見內部後台
+                participant S as OOOO內部後台
                 participant H as B2B 企業管理後台
-                participant E as 遠見官網
+                participant E as OOOO官網
                 
                 Note over S: 營運階段
                 H->>S: 提出期中加購需求
@@ -325,7 +325,7 @@
 
             <!-- 角色代號說明 -->
             <div class="flex flex-wrap gap-3 mb-6">
-                <span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-3 py-1 rounded-full text-sm font-bold">遠見｜後台管理員</span>
+                <span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-3 py-1 rounded-full text-sm font-bold">OOOO｜後台管理員</span>
                 <span style="background:#e0e7ff;color:#3730a3;border:1px solid #a5b4fc;" class="px-3 py-1 rounded-full text-sm font-bold">人資｜HR Admin</span>
                 <span style="background:#dcfce7;color:#166534;border:1px solid #86efac;" class="px-3 py-1 rounded-full text-sm font-bold">學員｜企業員工</span>
             </div>
@@ -337,14 +337,14 @@
                     <thead>
                         <tr>
                             <th>平台</th>
-                            <th>遠見</th>
+                            <th>OOOO</th>
                             <th>人資</th>
                             <th>學員</th>
                         </tr>
                     </thead>
                 <tbody>
                     <tr>
-                        <td><strong>遠見內部後台</strong><br><span class="text-slate-400 text-xs">企業帳號與合約管理</span></td>
+                        <td><strong>OOOO內部後台</strong><br><span class="text-slate-400 text-xs">企業帳號與合約管理</span></td>
                         <td><span class="text-green-700 font-semibold">✅ 完整管理權</span></td>
                         <td><span class="text-red-500">❌ 無法進入</span></td>
                         <td><span class="text-red-500">❌ 無法進入</span></td>
@@ -356,7 +356,7 @@
                         <td><span class="text-red-500">❌ 無法進入</span></td>
                     </tr>
                     <tr>
-                        <td><strong>遠見線上讀前台</strong><br><span class="text-slate-400 text-xs">員工閱讀平台</span></td>
+                        <td><strong>OOOO線上讀前台</strong><br><span class="text-slate-400 text-xs">員工閱讀平台</span></td>
                         <td><span class="text-red-500">❌ 不使用</span></td>
                         <td><span class="text-red-500">❌ 不使用</span></td>
                         <td><span class="text-green-700 font-semibold">✅ 完整閱讀權</span></td>
@@ -376,8 +376,8 @@
                 </tbody>
             </table>
 
-            <!-- 5-2 遠見內部後台 -->
-            <h3 class="mt-10">2. 遠見內部後台功能明細　<span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-2 py-0.5 rounded text-xs font-bold">僅限遠見</span></h3>
+            <!-- 5-2 OOOO內部後台 -->
+            <h3 class="mt-10">2. OOOO內部後台功能明細　<span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-2 py-0.5 rounded text-xs font-bold">僅限OOOO</span></h3>
             <div class="table-container">
                 <table class="spec-table">
                     <thead>
@@ -483,7 +483,7 @@
             </table>
 
             <!-- 5-3 B2B 企業管理平台 -->
-            <h3 class="mt-10">3. B2B 企業管理平台功能明細　<span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-2 py-0.5 rounded text-xs font-bold mr-1">遠見</span><span style="background:#e0e7ff;color:#3730a3;border:1px solid #a5b4fc;" class="px-2 py-0.5 rounded text-xs font-bold">人資</span></h3>
+            <h3 class="mt-10">3. B2B 企業管理平台功能明細　<span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;" class="px-2 py-0.5 rounded text-xs font-bold mr-1">OOOO</span><span style="background:#e0e7ff;color:#3730a3;border:1px solid #a5b4fc;" class="px-2 py-0.5 rounded text-xs font-bold">人資</span></h3>
             
             <div class="text-sm text-slate-600 bg-slate-100 border-l-4 border-slate-500 p-3 rounded mb-4">
                 <strong class="text-slate-800">🛡️ 護城河發動：合約過期後之「永久唯讀模式 (Read-Only Mode)」特例</strong>
@@ -576,7 +576,7 @@
                     <tr>
                         <td>停用學員</td>
                         <td>
-                            暫停學員存取遠見線上讀；<strong>名額立即釋出</strong>；歷史閱讀數據保留於企業報表<br>
+                            暫停學員存取OOOO線上讀；<strong>名額立即釋出</strong>；歷史閱讀數據保留於企業報表<br>
                             <ul class="list-disc pl-4 mt-1 space-y-0.5 text-xs">
                                 <li><strong>立即停用：</strong>留空生效日或選擇今日（含）以前，停用立即生效，名額當下釋出</li>
                                 <li><strong>排程停用：</strong>指定未來日期，學員於該日自動停用並釋出名額；停用日前狀態顯示「排程停用（橙色）」</li>
@@ -654,7 +654,7 @@
                     <tr class="bg-amber-50">
                         <td rowspan="2" class="font-semibold text-amber-900 align-top">增購引導</td>
                         <td>名額擴充提醒</td>
-                        <td><strong>自動觸發：</strong>當名額使用率（已開通 + 待開通）達 <strong>90%</strong> 時，儀表板首頁「名額使用率」卡片自動顯示 [立即擴充] 按鈕。<br><strong>行為：</strong>點擊後自動發送增購需求信給遠見業務部。</td>
+                        <td><strong>自動觸發：</strong>當名額使用率（已開通 + 待開通）達 <strong>90%</strong> 時，儀表板首頁「名額使用率」卡片自動顯示 [立即擴充] 按鈕。<br><strong>行為：</strong>點擊後自動發送增購需求信給OOOO業務部。</td>
                         <td class="text-green-700 font-semibold text-sm">即時</td>
                     </tr>
                     <tr class="bg-amber-50">
@@ -666,7 +666,7 @@
                         <td rowspan="2" class="font-semibold text-indigo-800 align-top">系統推播與輔助</td>
                         <td>行銷佈告欄 (詳情彈窗詳情)</td>
                         <td>
-                            由遠見管理員推送之動態消息（例如活動邀約、續約早鳥）。<br>
+                            由OOOO管理員推送之動態消息（例如活動邀約、續約早鳥）。<br>
                             <ul class="list-disc pl-4 mt-1 space-y-0.5 text-xs">
                                 <li><strong>互動行為：</strong>點擊 Topbar 或小鈴鐺通知後，<strong>一律開啟詳情彈窗 (Modal)</strong> 展示完整圖文內容。</li>
                                 <li><strong>多則未讀邏輯：</strong>登入時若有多則未讀推播，<strong>僅自動彈出第一則</strong>。其餘則數以「小鈴鐺紅點」提示，避免過度干擾用戶。</li>
@@ -707,7 +707,7 @@
                             2. 出現「立即洽詢額度擴充」按鈕。<br>
                             3. 點擊後顯示「已提交需求」提示。
                         </td>
-                        <td>後端發送「擴充需求通知」至遠見 CRM/業務窗口，名單標註企業與申請人資訊。</td>
+                        <td>後端發送「擴充需求通知」至OOOO CRM/業務窗口，名單標註企業與申請人資訊。</td>
                     </tr>
                     <tr>
                         <td class="font-bold text-indigo-700">合約快到期<br>(Renewal)</td>
@@ -717,17 +717,17 @@
                             2. 顯示「立即啟動續約洽詢」與信件預覽連結。<br>
                             3. 點擊後彈出成功視窗。
                         </td>
-                        <td>後端發送「續約意願通知」至遠見業務，並記錄 HR 點擊行為作為業務洽談依據。</td>
+                        <td>後端發送「續約意願通知」至OOOO業務，並記錄 HR 點擊行為作為業務洽談依據。</td>
                     </tr>
                 </tbody>
             </table>
 
-            <!-- 5-4 遠見線上讀前台 -->
-            <h3 class="mt-10">4. 遠見線上讀前台功能明細　<span style="background:#dcfce7;color:#166534;border:1px solid #86efac;" class="px-2 py-0.5 rounded text-xs font-bold">僅限學員</span></h3>
+            <!-- 5-4 OOOO線上讀前台 -->
+            <h3 class="mt-10">4. OOOO線上讀前台功能明細　<span style="background:#dcfce7;color:#166534;border:1px solid #86efac;" class="px-2 py-0.5 rounded text-xs font-bold">僅限學員</span></h3>
             <div class="text-sm text-slate-600 bg-amber-50 border border-amber-200 p-3 rounded mb-4">
                 ⚠️ <strong>架構前提與體驗設計：</strong>
                 <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-700">
-                    <li><strong>隱形整合（零摩擦體驗）：</strong>遠見線上讀前台非獨立模組。學員只要具備企業權限，登入 <code>member.gvm.com.tw</code> 後，全站既有付費文章將自動「隱形解鎖」，系統不另行建構額外的 B2B 企業專區入口。</li>
+                    <li><strong>隱形整合（零摩擦體驗）：</strong>OOOO線上讀前台非獨立模組。學員只要具備企業權限，登入 <code>member.gvm.com.tw</code> 後，全站既有付費文章將自動「隱形解鎖」，系統不另行建構額外的 B2B 企業專區入口。</li>
                     <li><strong>標準註冊流程：</strong>新學員收到開通信後，直接沿用現有會員中心的「標準註冊與登入流程」，完成註冊後企業權限即自動綁定。個人帳號管理（如密碼修改）由既有平台統一處理，不在本案開發範疇。</li>
                 </ul>
             </div>
@@ -809,32 +809,32 @@
                             <td><span style="background:#e0e7ff;color:#3730a3;" class="px-2 py-0.5 rounded text-xs font-bold">人資</span></td>
                             <td>合約到期前 30 天、14 天、7 天各發一封（共三封）</td>
                             <td class="text-green-700 text-sm font-semibold">系統自動</td>
-                            <td class="text-slate-500 text-sm">信中顯示到期日與名額使用狀況，提醒聯繫遠見續約</td>
+                            <td class="text-slate-500 text-sm">信中顯示到期日與名額使用狀況，提醒聯繫OOOO續約</td>
                         </tr>
                         <tr>
                             <td class="font-semibold">合約到期預警信（SA）</td>
-                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">遠見</span></td>
-                            <td>同上，同步副本通知遠見內部營運人員</td>
+                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">OOOO</span></td>
+                            <td>同上，同步副本通知OOOO內部營運人員</td>
                             <td class="text-green-700 text-sm font-semibold">系統自動</td>
-                            <td class="text-slate-500 text-sm">讓遠見業務提前跟進續約商機</td>
+                            <td class="text-slate-500 text-sm">讓OOOO業務提前跟進續約商機</td>
                         </tr>
                         <tr>
                             <td class="font-semibold">HR 帳號開通信</td>
                             <td><span style="background:#e0e7ff;color:#3730a3;" class="px-2 py-0.5 rounded text-xs font-bold">人資</span></td>
-                            <td>SA 在遠見內部後台開通 HR Admin 帳號後</td>
+                            <td>SA 在OOOO內部後台開通 HR Admin 帳號後</td>
                             <td class="text-green-700 text-sm font-semibold">系統自動</td>
                             <td class="text-slate-500 text-sm">含初次登入連結與操作說明</td>
                         </tr>
                         <tr>
                             <td class="font-semibold">名額擴充需求通知</td>
-                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">遠見</span></td>
+                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">OOOO</span></td>
                             <td>HR 點擊 Dashbaord 上的「立即洽詢額度擴充」按鈕</td>
                         <td class="text-amber-600 text-sm font-semibold">HR 手動觸發</td>
                             <td class="text-slate-500 text-sm">發送 Lead 至業務團隊，含企業使用率數據</td>
                         </tr>
                         <tr>
                             <td class="font-semibold">續約意願洽詢通知</td>
-                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">遠見</span></td>
+                            <td><span style="background:#fef3c7;color:#92400e;" class="px-2 py-0.5 rounded text-xs font-bold">OOOO</span></td>
                             <td>HR 點擊 Dashbaord 上的「立即啟動續約洽詢」按鈕</td>
                             <td class="text-amber-600 text-sm font-semibold">HR 手動觸發</td>
                             <td class="text-slate-500 text-sm">發送 Lead 至業務團隊，含合約到期日數據</td>
@@ -887,7 +887,7 @@
                         </tr>
                         <tr>
                         <td class="font-semibold text-slate-700">認證 & 權限</td>
-                            <td>HR / SA 登入、Token 管理、角色權限控制、整合既有遠見帳號系統</td>
+                            <td>HR / SA 登入、Token 管理、角色權限控制、整合既有OOOO帳號系統</td>
                             <td class="text-center font-bold text-indigo-700">1 週</td>
                             <td class="text-sm text-slate-500">依 member.gvm.com.tw 既有 OAuth / SSO 方案整合</td>
                         </tr>
@@ -931,7 +931,7 @@
                             <td class="font-semibold text-slate-700">部署 & UAT</td>
                             <td>正式環境部署、HR 使用者驗收測試、上線前緩衝</td>
                             <td class="text-center font-bold text-indigo-700">1 週</td>
-                            <td class="text-sm text-slate-500">含遠見內部人員試用回饋修正</td>
+                            <td class="text-sm text-slate-500">含OOOO內部人員試用回饋修正</td>
                         </tr>
                         <tr style="background:#eef2ff;">
                             <td class="font-bold text-indigo-800">合計</td>
@@ -1039,7 +1039,7 @@
                                 <td class="text-sm text-slate-600">學員數量大時，每日閱讀聚合可能影響效能；建議使用 AWS Lambda + EventBridge 排程</td>
                             </tr>
                             <tr>
-                                <td class="font-semibold">遠見帳號系統整合</td>
+                                <td class="font-semibold">OOOO帳號系統整合</td>
                                 <td class="text-center"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs font-semibold">中</span></td>
                                 <td class="text-sm text-slate-600">若 gvm.com.tw 帳號系統無現成 API，需額外 1 週開發 SSO 或帳號比對機制</td>
                             </tr>
